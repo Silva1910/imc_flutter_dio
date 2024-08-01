@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:imc_application/model/IMC.dart';
+import 'package:imc_application/model/imc.dart';
 
 class ImcPage extends StatefulWidget {
   const ImcPage({super.key});
@@ -19,7 +18,7 @@ void _calcularIMC() {
     double? peso = double.tryParse(pesoController.text);
 
     if (altura != null && peso != null) {
-      IMC imcModel = IMC();
+      imc imcModel = imc();
       imcModel.altura = altura;
       imcModel.peso = peso;
       setState(() {
@@ -97,7 +96,7 @@ void _calcularIMC() {
             child: const Text("Calcular IMC"),
             ),
             const SizedBox(height: 20),
-            Text(_resultado, style: TextStyle(color: Colors.yellow, fontSize: 20),)
+            Text(_resultado, style: const TextStyle(color: Colors.yellow, fontSize: 20),)
           ],
         ),
       ),

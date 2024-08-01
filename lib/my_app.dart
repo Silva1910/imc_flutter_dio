@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:imc_application/pages/Imc_Page.dart';
+import 'package:imc_application/pages/imc_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

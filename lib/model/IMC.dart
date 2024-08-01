@@ -1,4 +1,4 @@
-class IMC{
+class imc{
 
 double _peso = 0;
 double _altura = 0;
